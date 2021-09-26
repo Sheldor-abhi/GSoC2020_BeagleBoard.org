@@ -81,7 +81,7 @@ title: Home
         </div>
     </div>
     <!-- Section C -->
-    <h2 class="card-title">3. Installing OpenCV and tensorflow</h2>
+    <h2 class="card-title">3. Installing dependencies</h2>
     <!-- Step 1 -->
     <div class="input-group mb-3">
         <div class="input-group-prepend">
@@ -103,6 +103,16 @@ title: Home
         </div>
         This command cannot be directly used for the beaglebone black, you need to build tensorflow lite from scratch
         Follow<a href="https://github.com/samjabrahams/tensorflow-on-raspberry-pi/blob/master/GUIDE.md">this</a>
+    </div>
+    <!-- Step 3 -->
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">&#36;</span>
+        </div>
+        <input type="text" class="bg-light form-control" value="pip3 install flask" id="C3" disabled>
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary copy" type="button" onclick="copy2Clipboard('C3')"><span class="fa fa-copy"></span></button>
+        </div>
     </div>
   </div>
 </div>
