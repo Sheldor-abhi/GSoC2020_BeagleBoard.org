@@ -69,7 +69,7 @@ permalink: /journal/
 - As I was not able to use my laptop as a display for the board, implemented flask for streaming the OpenCV frames 
   from the board to a IP
 - Tried installing Tensorflow lite on the board from source, but failed to do so.
-- So,overall was able to implement face detection on the board,streaming the frames to an IP,
+- So overall, was able to implement face detection on the board,streaming the frames to an IP,
   and was able to depoly my Emotion Detectio model on my laptop.
   
 
