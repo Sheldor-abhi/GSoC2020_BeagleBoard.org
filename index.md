@@ -3,11 +3,11 @@ layout: default
 title: Home
 ---
 
-<div class="text-center">
+<!-- <div class="text-center">
     <a href="https://elinux.org/BeagleBoard/GSoC/2020_Projects/Cape_Compatibility" target="_blank">
         <img src="public/projectBanner.png" class="border border-danger rounded img-fluid" alt="banner">
     </a>
-</div>
+</div> -->
 
 <p class="text-center message border border-warning bg-dark text-warning">
     The idea of this project was to implement Facial Emotion Recogition on the BeagleBone Black,
@@ -100,6 +100,8 @@ title: Home
         <input type="text" class="bg-light form-control" value="pip3 install --user --upgrade tensorflow" id="C2" disabled>
         <div class="input-group-append">
             <button class="btn btn-outline-secondary copy" type="button" onclick="copy2Clipboard('C2')"><span class="fa fa-copy"></span></button>
+            This command cannot be directly used for the beaglebone black, you need to build tensorflow lite from scratch
+            Follow<a href="https://github.com/samjabrahams/tensorflow-on-raspberry-pi/blob/master/GUIDE.md">this</a>
         </div>
     </div>
   </div>
