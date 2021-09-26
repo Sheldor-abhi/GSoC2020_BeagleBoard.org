@@ -124,10 +124,7 @@ title: Home
 </div>
 
 | 1. [OpenCV](https://elinux.org/Beagleboard:BeagleBone_cape_interface_spec#LEDs) 
-<!-- | 8. [TIMER PWM](https://elinux.org/Beagleboard:BeagleBone_cape_interface_spec#TIMER_PWM) | -->
 | 2. [OpenCV+Tensorflow](https://github.com/Sheldor-abhi/Facial-Emotion-Detection) 
-<!-- | 9. [eCAP](https://elinux.org/Beagleboard:BeagleBone_cape_interface_spec#eCAP) | -->
-
 
 <!-- | 3. [SPI](https://elinux.org/Beagleboard:BeagleBone_cape_interface_spec#SPI) | 10. [eMMC](https://elinux.org/Beagleboard:BeagleBone_cape_interface_spec#eMMC) |
 | 4. [UART](https://elinux.org/Beagleboard:BeagleBone_cape_interface_spec#UART) | 11. [LCD](https://elinux.org/Beagleboard:BeagleBone_cape_interface_spec#LCD) |
