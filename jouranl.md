@@ -8,209 +8,69 @@ permalink: /journal/
 
 ## Week 1
 
-- Jun 1: Compiled Linux  
-  - forked and then cloned the [beagleboard/linux](https://github.com/beagleboard/linux) repo.
-  - Compiled linux from source using these commmands:
-    - `make -j4 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- mrproper`
-    - `$ make -j4 ARCH=arm bb.org_defconfig`
-    - `$ make -j4 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage`
-    - `$ make -j4 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- modules`
-    - `$ make -j4 ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- dtbs`
-- Jun 2: Worked on this website
-  - Updgraded to [lanyon](https://github.com/poole/lanyon) theme.
-  - Udated details accordingly.
-  - Created this Journal.
-- Jun 3:
-  - DT overlay PRs for [LCD-4 Cape (BBAI)](https://github.com/beagleboard/bb.org-overlays/pull/172) and [Servo Cape (BBB)](https://github.com/beagleboard/bb.org-overlays/pull/173/)
-- Jun 4:
-  - Created `Hello World` Loadable Kernel Module (LKM).
-  - Updated [2020 Projects](https://elinux.org/BeagleBoard/GSoC/2020_Projects) wiki page.
-- Jun 5:
-  - Created the presentation for Intro Video.
-- Jun 6:
-  - Submitted [pr]( https://github.com/beagleboard/linux/pull/236) for GSoC warm up task.
-  - [Seprate repo](https://github.com/lorforlinux/gsoc-simple-char) with the GSoC char driver and a usespace program to test that simple char driver.
-- Jun 7:
-  - Published [intro](https://www.youtube.com/watch?v=jP9fwOxp4Bc) YouTube Video.
+- Went through courses on Neural Networks and Deep Learning and 
+  Convolutional Neural Networks for understanding the basics.
+
 
 ## Week 2
 
-- Jun 8:
-  - Tested LCD4 cape on BBBWL
-- Jun 9:
-  - Cleard some doubts on DT and beagle-tester with the help of ds2, jkridner and rcn-ee.
-  - Used minicom to see the boot log/debug message of the BBBWL
-    - sudo minicom -s
-    - serial port setup -> Baud: 115200, Device: /dev/ttyUSB0, HFC: NO.
-    - save setup as dfl
-    - sudo minicon + reset on BBBWL
-- Jun 10:
-  - Installed fan on BBAI.
-  - Tried flashing new image on BBAI but no success, [boot log](https://pastebin.com/qvrgWR5q).
-  - updating bb.org-overlays on the preinstalled image of BBAI to test [LCD4 cape overlay](https://github.com/beagleboard/bb.org-overlays/pull/172).
-- Jun 11:
-  - Flashed new image on BBAI (sdcard was causing the problem before).
-  - added comments to [am5729-beagleboneai.dts](https://github.com/beagleboard/BeagleBoard-DeviceTrees/pull/15)
-- Jun 12:
-  - 4D systems LCD4 not working on BBAI still.
-  - started working on servo cape with BBBWl.
-- Jun 13:
-  - Tested Servo, Load and Relay capes on BBWL.
-  - Started working on comms cape with BBWL.
-- Jun 14:
-  - Partially tested comms cape, can bus and 4-20mA are reamined to be tested.
-  - Started working on beagle-tester.
+- Finished a course on Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning
   
 ## Week 3
 
-- Jun 15:
-  - Installed beagle-tester on BBWL.
-  - Trying to understand it's working (running behind the schedule).
-- Jun 16:
-  - Got the I2C5 virtual cape overlay working on BBAI.
-- Jun 17:
-  - Created BBAI UART Virtual cape overlays.
-    - [BBAI UART3](https://github.com/beagleboard/bb.org-overlays/pull/177)
-    - [BBAI UART5](https://github.com/beagleboard/bb.org-overlays/pull/176)
-    - [BBAI UART8](https://github.com/beagleboard/bb.org-overlays/pull/178)
-    - [BBAI UART10](https://github.com/beagleboard/bb.org-overlays/pull/179)
-- Jun 18:
-  - Got same DT overlay to work on BBB ans BBAI
-- Jun 19:
-  - Updated BBAI kernel to 4.19.
-  - worked on /bone/uart/{1,2,3,4,5} overlays.
-- Jun 20:
-  - Created initial [compatibility layer](https://github.com/beagleboard/BeagleBoard-DeviceTrees/pull/17) for BBB and BBAI.
-  - Submitted [Virtual Cape UART overlays](https://github.com/beagleboard/bb.org-overlays/pull/180) that work on both BBB and BBAI.
-- Jun 21:
-  - Resolved changes requred in above PRs
+- Familiarized myself with OpenCV
+  - Face detection using Haar Cascade Classfiers
+  - Cropping and localization of faces
 
 ## Week 4
 
-- Jun 22:
-  - Started working on beagle-tester code refactoring.
-- Jun 23:
-  - Worked on beagle-tester makefile.
-- Jun 24:
-  - created a post about [servo cape testing on BBB](https://lorforlinux.github.io/GSoC2020_BeagleBoard.org/2020/06/20/testing-servo-cape-on-BBBW/)
-- Jun 25:
-  - Rebased compatibility branch.
-- Jun 26:
-  - Started working on I2C bone buses code.
-- Jun 27
-  - Completed initial work for I2C bone buses.
-    - [/bone/i2c overlays](https://github.com/beagleboard/bb.org-overlays/pull/182)
-    - [Updated compatibility layer](https://github.com/beagleboard/BeagleBoard-DeviceTrees/pull/17)
-- Jun 28:
-  - Started working on SPI bone buses code.
+- Implemented OpenCV for face detection using Haar Cascade Classfiers.
+- Flashed the Debian 10 image an SD card and booted the board
+- Successfully SSHd into the board
+- Started setting up my board with all the dependecies required(python,OpenCV,etc)
+- Had to resize the SD card partition, as the board was only able to access 866MB of space from the 16GB SD card 
 
 ## Week 5
 
-- Jun 29:
-  - Completed initial work for I2C bone buses.
-    - [/bone/i2c overlays](https://github.com/beagleboard/bb.org-overlays/pull/183)
-    - [Updated compatibility layer](https://github.com/beagleboard/BeagleBoard-DeviceTrees/pull/17)
-  - Started working on comms cape testing (4-20mA and CAN bus were remaining).
-- Jun 30:
-  - Used logic anaylzer to capture the SPI data.
-- Jul 1:
-  - Preparing hardware for 4-20mA and can bus testing of comms cape.
-- Jul 2:
-  - Tested CAN bus of comms cape using MCP2515.
-- Jul 3 & Jul 4:
-  - Break from work ;)
-- Jul 5:
-  - Started working on the ultimate easy pinmuxing macros.
-- Jul 6:
-  - Updated BBAI dts files.
-  - Started working on Relay cape.
+- Implemented a CNN for recognizing sad or happy from a small data set(80 images) with 3 convolutional layers
+  and accuracy of 100% (as data set was too small)
+  Now that I know how to build a CNN from scratch and have already made a face detector using OpenCV
+  I will be starting to implement facial features extraction from next week.
 
 ## Week 6
 
-- Jul 7:
-  - Relay and Load cape working on BBB and BBAI using same overlay
-    - [Relay Cape overlay](https://github.com/beagleboard/bb.org-overlays/pull/186)
-    - [Load Cape overlay](https://github.com/beagleboard/bb.org-overlays/pull/185)
-- Jul 8:
-  - Started working on new macros for easy BBAI pinmuxing.
-- Jul 9:
-  - Completed initial work for BBAI pinmuxing macros, will test the code tomorrow.
-- Jul 10:
-  - pushed BBAI pinmuxing macros
-    - [Initial combined macros for P8 & P9 headers](https://github.com/beagleboard/BeagleBoard-DeviceTrees/pull/17/commits/3c67d9e63fb980478c53f37184fafce0bbb95b84)
-    - [ Update pin header nodes](https://github.com/beagleboard/BeagleBoard-DeviceTrees/pull/17/commits/878f4c6a6dc419cb4a89e2bc22de6e40aed3d00c)
-- Jul 11:
-  - Started code clean up.
-  - Reading about libgpiod.
-- Jul 12:
-  - Submitted code cleanup and bug fixing commites.
+- Read some papers and looked into some videos for implementing CNN.
+- Finalized FER 2013 dataset for testing the CNN
+- Trained a model on FER-2013 data set and ran into some issues.
 
 ## Week 7
 
-- Jul 13:
-  - servoCape and motorCape now work with same DT overlay.
-    - servoCape: https://github.com/beagleboard/bb.org-overlays/pull/174
-    - motorCape: https://github.com/beagleboard/bb.org-overlays/pull/188
-  - Added PWM nodes in [compatibility code](https://github.com/beagleboard/BeagleBoard-DeviceTrees/pull/17)
-  - Tested libgpiod on BBAI using C examples from https://github.com/starnight/libgpiod-example
-- Jul 14:
-  - Started working on the LCD cape.
-- Jul 15:
-  - LCD cape not working on BBAI. one of the DT overlay i tried -> https://pastebin.com/0nAqQug5
-- Jul 16:
-  - Tested more code for LCD, not working still.
-- Jul 17:
-  - Tried updating & upgrading as rcn-ee suggested but no success still.
-- Jul 18:
-  - I was out for some work, not able do anything for project today.
+- Trained a model on the FER-2013 data set, but the validation accuracy was not crossing 0.6 
+- So I removed one of the emotion subset from the list as the data set was imbalanced with the no of images 
+  of 'disgust' being low compared to the others, but even that didn't help much
+- Will try changing the deep layers a bit or just use some other dataset
+
 
 ## Week 8
 
-- Jul 19:
-  - Worked on CAN bus, submitted a [PR](https://github.com/beagleboard/bb.org-overlays/pull/189) for CAN0 & CAN1
-- Jul 20:
-  - Started working on UART, I2C, SPI, PWM.
-- Jul 21:
-  - Submitted [PR](https://github.com/beagleboard/bb.org-overlays/pull/193) for bone bus PWM DT overlays.
-- Jul 22 - 25:
-  - Worked on documentation and examples
-    - Updated [Cape Interface Spec](https://elinux.org/Beagleboard:BeagleBone_cape_interface_spec) page.
-- Jul 26:
-  - Started working on the cape examples.
+- Tried to find different ways to improve the model
+- Looked into different prebuilt architectures like RESTNet101,GoogleNET,MobileNet 
+- Will try to build on it through transfer learning as they are pretty good models
+
 
 ## Week 9
 
-- Jul 27:
-  - Started working on pwm-timer.
-- Jul 28:
-  - submitted [PR](https://github.com/beagleboard/bb.org-overlays/pull/195) for pwm-timer.
-- Jul 29:
-  - Did some reading on PRU.
-- Jul 30 & 31:
-  - Break from work due to EXAM (BTP presentation).
-- Aug 1:
-  - Started working on PRU & ADC.
-- Aug 2:
-  - got cloud9 PRU examples to work on BBAI.
+- Decided to implement transfer learning by building on the MobileNetV2 architecture
+- Worked on bulding and improving the model
 
 ## Week 10
 
-- Aug 3:
-  - got PRU1_0 & PRU1_1 to work on BBAI, wrote overlays and cloud9 examples for it.
-- Aug 4:
-  - tried rcn-ee's testing image (v5.4x)
-- Aug 5:
-  - tested PRU macros.
-- Aug 6:
-  - Updated cape interface spec.
-- Aug 7:
-  - Worked on PRU examples.
-- Aug 8:
-  - Started working on v5.4x kernel for BBAI
-- Aug 9:
-  - Got BBBWL working with ecn-ee's testing image.
+- Tried to use OpenCV over SSH
+- As I was not able to use my laptop as a display for the board, implemented flask for streaming the OpenCV frames 
+  from the board to a IP
+- Tried installing Tensorflow lite on the board from source, but failed to do so.
   
-## Week 11
+<!-- ## Week 11
 
 - Aug 10:
   - Not able to make the compatibility code to work on v5.4x-ti-overlay branch.
@@ -269,4 +129,4 @@ permalink: /journal/
   - Submitted Final evaluation.
 - Aug 31:
   - End of my GSoC2020 journey!
-  - Will continue to work on this site!
+  - Will continue to work on this site! -->
