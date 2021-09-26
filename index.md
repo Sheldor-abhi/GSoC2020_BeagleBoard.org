@@ -125,8 +125,8 @@ title: Home
     </a>
 </div>
 
-| 1. [OpenCV](https://elinux.org/Beagleboard:BeagleBone_cape_interface_spec#LEDs) 
-| 2. [OpenCV+Tensorflow](https://github.com/Sheldor-abhi/Facial-Emotion-Detection) 
+| 1. [OpenCV](https://github.com/Sheldor-abhi/Facial-Emotion-Detection/tree/main/OpenCV) 
+| 2. [OpenCV+Tensorflow](https://github.com/Sheldor-abhi/Facial-Emotion-Detection/tree/main/OpenCV%2BTensorflow) 
 
 <!-- | 3. [SPI](https://elinux.org/Beagleboard:BeagleBone_cape_interface_spec#SPI) | 10. [eMMC](https://elinux.org/Beagleboard:BeagleBone_cape_interface_spec#eMMC) |
 | 4. [UART](https://elinux.org/Beagleboard:BeagleBone_cape_interface_spec#UART) | 11. [LCD](https://elinux.org/Beagleboard:BeagleBone_cape_interface_spec#LCD) |

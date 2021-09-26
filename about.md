@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <p class="message border border-warning text-warning" style="background-color:black">
-  Hi, My name is <a href="https://www.linkedin.com/in/abhishek-shetty-573a081a6/">Abhishek Shetty</a> and I am the maintainer of this site and A GitHUb Extern under <a href="https://BeagleBoard.org">BeagleBoard.org</a>. I worked on <a href="https://github.com/Sheldor-abhi/Facial-Emotion-Detection">Facial Emotion Detection on the BeagleBone Black</a> and updated my progress through this website.
+  Hi, My name is <a href="https://www.linkedin.com/in/abhishek-shetty-573a081a6/">Abhishek Shetty</a> and I am the maintainer of this site and a GitHub Extern under <a href="https://BeagleBoard.org">BeagleBoard.org</a>. I worked on <a href="https://github.com/Sheldor-abhi/Facial-Emotion-Detection">Facial Emotion Detection on the BeagleBone Black</a> and updated my progress through this website.
    <!-- , for more info you can see <a href="https://elinux.org/BeagleBoard/GSoC/2020Proposal/DeepakKhatri">eLinux</a> page of the project. -->
 </p>
 
