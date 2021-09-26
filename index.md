@@ -100,9 +100,9 @@ title: Home
         <input type="text" class="bg-light form-control" value="pip3 install --user --upgrade tensorflow" id="C2" disabled>
         <div class="input-group-append">
             <button class="btn btn-outline-secondary copy" type="button" onclick="copy2Clipboard('C2')"><span class="fa fa-copy"></span></button>
-            This command cannot be directly used for the beaglebone black, you need to build tensorflow lite from scratch
-            Follow<a href="https://github.com/samjabrahams/tensorflow-on-raspberry-pi/blob/master/GUIDE.md">this</a>
         </div>
+        This command cannot be directly used for the beaglebone black, you need to build tensorflow lite from scratch
+        Follow<a href="https://github.com/samjabrahams/tensorflow-on-raspberry-pi/blob/master/GUIDE.md">this</a>
     </div>
   </div>
 </div>
