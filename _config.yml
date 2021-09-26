@@ -1,18 +1,18 @@
 # Setup
-title:               GSoC 2020
+title:               GitHub Externship 2021
 tagline:             'BeagleBoard.org'
-description:         'This website is created for keeping track of the Development of "Cape compatibility layer for BeagleBone Black and BeagleBone AI" project.'
-url:                 https://deepaklorkhatri.me
-baseurl:             /GSoC2020_BeagleBoard.org
+description:         'This website is created for documenting my work done during the GitHub Externship for BeagleBoard.org.'
+url:                 https://sheldor-abhi.github.io
+baseurl:             /GitHub_Externship_2021
 paginate:            5
 paginate_path:       "/blog/page:num/"
 permalink:           pretty
 
 # About/contact
 author:
-  name:              Deepak Khatri
-  url:               https://deepaklorkhatri.me/
-  email:             deepaklorkhatri7@gmail.com
+  name:              Abhishek Shetty
+  url:               https://sheldor-abhi.github.io/
+  email:             shettyabhishek2020@gmail.com
 
 # Gems
 plugins:
@@ -20,7 +20,7 @@ plugins:
   - jekyll-octicons
 
 # Custom vars
-version:             1.5
+# version:             1.5
 # week:                 12
 status:              "Completed ✔️"
-google_analytics_id: #UA-XXXX-Y
+# google_analytics_id: #UA-XXXX-Y
