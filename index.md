@@ -33,7 +33,7 @@ title: Home
         <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-sm">&#36;</span>
         </div>
-        <input type="text" class="bg-light form-control" value="sudo apt update -y" id="A1" disabled>
+        <input type="text" class="bg-light form-control" value="sudo apt update" id="A1" disabled>
         <div class="input-group-append">
             <button class="btn btn-outline-secondary copy" type="button" onclick="copy2Clipboard('A1')"><span class="fa fa-copy"></span></button>
         </div>
@@ -43,7 +43,7 @@ title: Home
         <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-sm">&#36;</span>
         </div>
-        <input type="text" class="bg-light form-control" value="sudo apt upgrade -y" id="A2" disabled>
+        <input type="text" class="bg-light form-control" value="sudo apt upgrade" id="A2" disabled>
         <div class="input-group-append">
             <button class="btn btn-outline-secondary copy" type="button" onclick="copy2Clipboard('A2')"><span class="fa fa-copy"></span></button>
         </div>
@@ -87,7 +87,7 @@ title: Home
         <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-sm">&#36;</span>
         </div>
-        <input type="text" class="bg-light form-control" value="pip3 install opencv-python" id="C1" disabled>
+        <input type="text" class="bg-light form-control" value="sudo apt install python3-opencv" id="C1" disabled>
         <div class="input-group-append">
             <button class="btn btn-outline-secondary copy" type="button" onclick="copy2Clipboard('C1')"><span class="fa fa-copy"></span></button>
         </div>
