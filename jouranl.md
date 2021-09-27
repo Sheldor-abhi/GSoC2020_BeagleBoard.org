@@ -61,7 +61,7 @@ permalink: /journal/
 ## Week 9
 
 - Decided to implement transfer learning by building on the MobileNetV2 architecture
-- Worked on bulding and improving the model
+- Worked on building and improving the model
 
 ## Week 10
 
@@ -70,6 +70,6 @@ permalink: /journal/
   from the board to a IP
 - Tried installing Tensorflow lite on the board from source, but failed to do so.
 - So overall, was able to implement face detection on the board,streaming the frames to an IP,
-  and was able to depoly my Emotion Detection model on my laptop.
+  and was able to deploy my Emotion Detection model on my laptop.
   
 
